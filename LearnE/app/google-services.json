@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "627010378847",
+    "firebase_url": "https://learne-51b47.firebaseio.com",
+    "project_id": "learne-51b47",
+    "storage_bucket": "learne-51b47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627010378847:android:e4b54f9db5bff9d5",
+        "android_client_info": {
+          "package_name": "learnenglishhou.bluebirdaward.com.learne"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627010378847-jnoqoocom2dsmo1m2hm87g2fe8ba1f8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2iE_F9uZa1jBLJyp2HngisVnSKjLkW0U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

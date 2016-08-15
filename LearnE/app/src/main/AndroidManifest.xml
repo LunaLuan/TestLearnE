@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="learnenglishhou.bluebirdaward.com.learne">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="LearnEEE"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.DanhSachBaiHocActivity"
+            android:label="LearnEEE">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.DanhSachCauHoiActivity"
+            android:label="Tập nói" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1763592047258922"
+            android:exported="true" />
+
+        <service
+            android:name=".services.KiemTraBaiHocMoiService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activities.DanhSachDiemActivity"
+            android:label="@string/title_activity_danh_sach_diem" />
+        <activity
+            android:name=".activities.SettingsMenuActivity"
+            android:label="@string/title_activity_settings" />
+
+        <service
+            android:name=".services.ThemBaiHocMoiService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.ThemBaiMoiService"
+            android:exported="false"></service>
+    </application>
+
+</manifest>
